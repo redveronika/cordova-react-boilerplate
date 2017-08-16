@@ -7,9 +7,7 @@ const ENTRY_POINT = '../src/index.js';
 const OUTPUT_PATH = '../www';
 
 module.exports = merge([{
-  entry: [
-    path.join(__dirname, ENTRY_POINT)
-  ],
+  entry: [ path.join(__dirname, ENTRY_POINT) ],
   output: {
     path: path.join(__dirname, OUTPUT_PATH),
     filename: 'assets/js/bundle.js',
