@@ -10,7 +10,7 @@ module.exports = merge([{
     'react-hot-loader/patch',
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
-    path.join(__dirname, '../src/js/index.js')
+    path.join(__dirname, '../src/index.js')
   ],
   output: {
     path: path.join(__dirname, '../www'),

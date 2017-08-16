@@ -10,7 +10,7 @@ const {
 
 module.exports = merge([{
   entry: [
-    path.join(__dirname, '../src/js/index.js')
+    path.join(__dirname, '../src/index.js')
   ],
   output: {
     path: path.join(__dirname, '../www'),
