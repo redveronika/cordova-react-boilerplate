@@ -2,18 +2,14 @@ const path = require('path');
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const {
-  optimize: {
-    UglifyJsPlugin
-  }
-} = require('webpack');
+const { optimize: { UglifyJsPlugin } } = require('webpack');
+const ENTRY_POINT = '../src/index.js';
+const OUTPUT_PATH = '../www';
 
 module.exports = merge([{
-  entry: [
-    path.join(__dirname, '../src/index.js')
-  ],
+  entry: [ path.join(__dirname, ENTRY_POINT) ],
   output: {
-    path: path.join(__dirname, '../www'),
+    path: path.join(__dirname, OUTPUT_PATH),
     filename: 'assets/js/bundle.js',
     publicPath: './'
   },
